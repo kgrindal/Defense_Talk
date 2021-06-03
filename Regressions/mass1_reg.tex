@@ -1,0 +1,20 @@
+Call:
+lm(formula = incident_permil ~ time + treat + time * treat + 
+    z + z * time + z * treat + z * treat * time, data = AppendITS)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.1856 -0.7390 -0.1392  0.8231  3.0234 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   9.37756    1.63754   5.727 3.12e-05 ***
+time         -0.63045    0.40688  -1.549    0.141    
+treat        -3.88611    2.31583  -1.678    0.113    
+z             1.16018    2.33671   0.497    0.626    
+time:treat    0.74763    0.57541   1.299    0.212    
+time:z       -0.04708    0.17903  -0.263    0.796    
+treat:z      -0.07298    3.30461  -0.022    0.983    
+time:treat:z -0.08611    0.25318  -0.340    0.738    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

@@ -1,0 +1,75 @@
+\documentclass[10pt]{beamer}
+
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer}
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+% Packages added by Karl
+\usepackage{wrapfig}
+\input{USAmap.tex}
+
+\title{Once more unto the breach}
+\subtitle{Quasi-experiments in cybersecurity policy interventions}
+% \date{\today}
+\date{}
+\author{Karl Grindal}
+\institute{Georgia Institute of Technology}
+% \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Table of contents}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents%[hideallsubsections]
+\end{frame}
+
+\section[Intro]{Introduction}
+
+\begin{frame}{Why Should We Care About Data Breaches?}
+  \begin{figure}
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Figures/OPM.jpg}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Why Should We Care About Data Breaches?}
+  \begin{figure}
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Figures/Equifax-Logo.jpg}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Why Should We Care About Data Breaches?}
+  \begin{figure}
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Figures/Donald_Trump.jpg}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Massachusetts Data Security Law}
+    \begin{figure}
+      \caption{Breaches per Million with no Resident Limits} \label{fig:figure15}
+    \begin{tikzpicture}
+    \begin{axis}[legend columns=1, legend style={font=\small, at={(0.5,-.3)},anchor=north},
+    xlabel={Years},
+    ylabel={Breaches per Million},
+    width=0.9\textwidth,
+    height=5cm,
+    symbolic x coords={Apr,May,Jun,Jul}
+    \addplot[color=red,]
+    coordinates{(Apr, 31)};
+    \legend{Massachusetts}
+    \end{axis}
+    \end{tikzpicture}
+    \end{figure}
+
+\end{frame}
+
+\end{document}
